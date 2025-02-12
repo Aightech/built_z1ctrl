@@ -1,7 +1,6 @@
-cmake_minimum_required(VERSION 3.3)
-
+cmake_minimum_required(VERSION 3.3...3.5)
 ###### LIBRARY NAME AND VERSION ######
-include(CMakeConfig.txt)
+include(CMakeConfig.cmake)
 
 if(NOT DEFINED DIR_DEPTH)
   set(DIR_DEPTH 0)
@@ -26,3 +25,5 @@ else ()
   set_target_properties( ${LIB_NAME} PROPERTIES INTERFACE_INCLUDE_DIRECTORIES "${CMAKE_CURRENT_SOURCE_DIR}/include" )
 
 endif ()
+
+
